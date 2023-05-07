@@ -6,13 +6,15 @@ todo ‼️ 因为 thegraph 现在还不支持 sepolia测试网络（如下图�
 所以作业实现方式：（1）把自己的Crowdfunding合约部署到sepolia，并开源合约源码，（2）自己写得thegraph调用其他同学已经成功部署到goerli测试网的合约，监听bid事件。
 
 > thegraph 现在还不支持 sepolia测试网络的错误提示信息
->
+
 ![](https://github.com/guozhouwei/crowdfunding666/tree/main/images/001.png)
->
+
 
 > thegraph 支持 sepolia测试网络并deploy成功的提示信息
+  
+
 ![](https://github.com/guozhouwei/crowdfunding666/tree/main/images/002.png)
->
+
 
 ```html
 - 我写的合约：
