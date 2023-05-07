@@ -2,26 +2,23 @@ specVersion: 0.0.5
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum
+  - kind: ethereum/contract
     name: CrowdFunding
-    network: sepolia
+    network: goerli
     source:
-      address: "0x62ABd112bE92cb29c46aE1e895817Fe813FC4BC8"
+      address: "0xE6fa0fd74ACB333E9714B245E5149b4DA2bbba11"
       abi: CrowdFunding
-      startBlock: 3428182
+      startBlock: 0
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - CampaignBidLog
-        - CampaignLog
+        - Funder
       abis:
         - name: CrowdFunding
           file: ./abis/CrowdFunding.json
       eventHandlers:
-        - event: CampaignBidLog(uint256,address,uint256)
+        - event: BidLog(uint256,address,uint256)
           handler: handleCampaignBidLog
-        - event: CampaignLog(uint256,address,uint256)
-          handler: handleCampaignLog
       file: ./src/crowd-funding.ts
