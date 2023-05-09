@@ -34,3 +34,5 @@ https://goerli.etherscan.io/address/0xE6fa0fd74ACB333E9714B245E5149b4DA2bbba11#c
 
 # 温馨提示 ‼️
 thegrap 支持的网络 请查看此url： https://thegraph.com/docs/en/developing/supported-networks/
+‼️ 也可以使用mumbai网络，https://mumbaifaucet.com/
+![](https://github.com/guozhouwei/crowdfunding666/blob/main/images/002.png)
